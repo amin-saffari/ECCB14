@@ -349,10 +349,12 @@ Your browser does not support iframe
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
 				progress: true,
-				history: true,
-				center: true,
+				touch: true,
+				embedded: true,
+				hideAddressBar: true,
+				previewLinks: false,
+				viewDistance: 3,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
