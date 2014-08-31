@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>DnaDamage Amin Saffari</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+<!-- SLIDE STUFF HERE -->
+<section>
+<h2 class="title">DNA Damage analysis of ancient DNA</h2>
+<h4 class="author">Amin Saffari</h4>
+<!--small> Max Planck Institute for Evolutionary Anthropology</small-->
+</section>
+<section>
+<section class="slide level1" id="Damage_types">
+<h2 class="title">Damage/Mutation in DNA</h2>
+<br><br>
+<ul class="incremental2">
+<li class="fragment">Environment (Sunlight,X-ray,...) </li>
+<li class="fragment">Within cell (Replication errors,Endogenous chemical agent,...)</li>
+</ul>
+<!--small> Max Planck Institute for Evolutionary Anthropology</small-->
+</section>
+<section class="slide level1" id="Damage_types_">
+<img src="figure/Dmage_types2.jpg">
+</section>
+</section>
+
+<section>
+<section class="slide level1" id="Damage_types_Model">
+Different substitutions
+<!--ul class="incremental2"-->
+<p class="fragment roll-in"> <img src="figure/transversion-transition-mutations-large.png" height="50%" width="50%"></p>
+<p class="fragment roll-in"> <img src="figure/cytosine-deamination-mechanism.png" height="60%" width="60%"> </p>
+<!--/ul-->
+</section>
+<!--section class="slide level1" id="Damage_types_Mod"-->
+<!--img src="figure/transversion-transition-mutations-large.png" height="70%" width="70%"-->
+<!--/section-->
+</section>
+
+
+
+<section>
+<section class="slide level1" id="Vindia_Damage">
+<h2 id="idea">Ancient DNA</h2>
+<br><br>
+<li class="fragment"> No repair pathway leads to accumulated errors</li>
+<li class="fragment"> Vindija(Low Cov)</li>
+</section>
+<section class="slide level1" id="Vindia_Damage_1">
+<img src="figure/Mismatch_Vindia.png" height="70%" width="70%">
+<br>
+<small>Patterns of damage in genomic DNA sequences from a Neandertal (Briggs et al.)</small>
+</section>
+</section>
+
+<section>
+<section class="slide level1" id="idea_22">
+<h2 id="idea_33">Why we are reanalysing ancient DNA</h2>
+<br><br>
+<ul class="incremental">
+<li class="fragment">Use Denisova, Altai and Ust-Ishim (High Cov) </li>
+<li class="fragment">Single Stranded Library preparation </li>
+<li class="fragment">Compare reads with consensus </li>
+<!--li class="fragment">Two base-quality 0 and 40 </li-->
+<li class="fragment">Compare the result with Modern Human (ssDNA) </li>
+<!--li class="fragment"> Damage Previously analyzed using Vindija(Low Cov)</li-->
+<!--li class="fragment">Predominant error was C-T</li-->
+<!--li class="fragment">Use Denisova, Altai (High Cov)</li-->
+<!--li class="fragment">Single Stranded Library preparation shows damage on the right strand</li-->
+<!--li class="fragment">More data give higher resolution</li-->
+<!--li class="fragment">High coverage allows for sequences to be compared to the consensus</li-->
+</ul>
+</section>
+<!--section-->
+<section class="slide level1" id="Workflow_876">
+<h4 id="Workflow">Calculating Rate of Damage</h4>
+<!--br--><!--br-->
+<!--ul class="incremental"-->
+<!--li class="fragment">Reads are mapped by hg19</li-->
+<!--li class="fragment">Using genotype data (VCF) as a consensus</li-->
+<!--li class="fragment">Compute the rate of changes for each position</li-->
+<!--li class="fragment">Mappability Filter
+	<ul class="incremental"-->
+		<!--li class="fragment">Base-quality (0 & 30)</li-->
+		<!--li class="fragment">Manifesto (Unique in the genome)</li-->
+	<!--/ul-->
+<!--/li-->
+<!--li class="fragment">Compare to modern human sequences [B-team, Karitiana] </li-->
+<!--/ul-->
+<!--/section-->
+<!--section class="slide level1" id="Counting_Forward"-->
+<img src="figure/Forward.png">
+</section>
+<!--section class="slide level1" id="Counting_Reverse"-->
+<!--img src="figure/Reverse.png"-->
+<!--/section-->
+</section>
+<section class="slide level1" id="Mock_extraction">
+<h2 id="Altai">Modern human</h2>
+<br><br>
+<ol class="incremental">
+<li class="fragment">Normal DNA extraction</li>
+<li class="fragment">Sheared to smaller fragments</li>
+<li class="fragment">Extract DNA with ancient extraction parameter </li>
+<!--li class="fragment">High coverage allows for sequences to be compared to the consensus</li-->
+</ol>
+
+<!--calculate the error percentage on each position in the read-->
+</section>
+<section class="slide level1" id="Compare_the_rate" style="width: 1600px; height: 800px; display: block; top: -450px; left: -70%" >
+<!--ul class="slide level1"-->
+<!--/ul-->
+<!--iframe height="100%" frameborder="no" scrolling="no" src="http://192.168.3.46:7973/" width="100%"> </iframe-->
+<!--iframe height="100%" frameborder="no" scrolling="yes" src="stdin.html" width="100%"> </iframe-->
+<!--iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Vindia_Denisova_Modern.html"-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Denisova_Ust_Ishim_ModernControl_Ancient.html">
+Your browser does not support iframe
+</iframe>
+</section>
+<!--section>
+<section class="slide level1" id="New_Modern">
+<h2 id="Modern_Human"> Modern Human </h2>
+</section>
+<section class="slide level1" id="New_Modern_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Modern_New_MX_0.html">
+Your browser does not support iframe
+</iframe>
+</section>
+<section class="slide level1" id="New_Modern_30" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Modern_New_MX_30.html">
+Your browser does not support iframe
+</iframe>
+</section>
+</section-->
+<section class="slide level1" id="Vindia_old_along">
+<h3 id="Altai">Substitution along the read</h3>
+<img src="figure/SubstitutionFrequency_Vindia.jpg" height="100%" width="100%">
+<!--calculate the error percentage on each position in the read-->
+</section>
+<section>
+<section class="slide level1" id="Ust_Ishim_Altai">
+<h3 id="Denisova">Compare Denisova, Ust-Ishim and Altai</h3>
+</section>
+<section class="slide level1" id="Ust_Ishim_Altai_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--img src="figure/Modern_Denisova_0.png"-->
+<!--img src="figure/Modern_Denisova_SS_0_Begin_End.svg"-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Ust_Ishim_0.html">
+Your browser does not support iframe
+</iframe>
+</section>
+<section class="slide level1" id="Ust_Ishim_Altai_40" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--img src="figure/Modern_Denisova_0.png"-->
+<!--img src="figure/Modern_Denisova_SS_0_Begin_End.svg"-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Ust_Ishim_40.html">
+Your browser does not support iframe
+</iframe>
+</section>
+<!--section class="slide level1" id="Denisova_SS_30"-->
+<!--img src="figure/Modern_Denisova_30.png"-->
+<!--img src="figure/Modern_Denisova_SS_30_Begin_End.svg"-->
+<!--/section-->
+</section>
+
+<section>
+<section class="slide level1" id="Altai_SS">
+<h3 id="Altai">Compare Denisova, Ust-Ishim, Altai and Modern Human</h3>
+<!--calculate the error percentage on each position in the read-->
+</section>
+<section class="slide level1" id="Altai_New_Modern_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--h3 id="Altai_Ref">Compare it with Human Ref</h3-->
+<!--iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Modern_humannew_0.html"-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Ust_Ishim_Denisova_ModernControl_Ancient_0.html">
+Your browser does not support iframe
+</iframe>
+<!--img src="figure/Altai_SS_Altai_Ref_SS_30_Begin_End.svg"-->
+</section>
+<section class="slide level1" id="Altai_New_Modern_40" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--h3 id="Altai_Ref">Compare it with Human Ref</h3-->
+<!--iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Modern_humannew_30.html"-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Ust_Ishim_Denisova_ModernControl_Ancient_40.html">
+Your browser does not support iframe
+</iframe>
+<!--img src="figure/Altai_SS_Altai_Ref_SS_30_Begin_End.svg"-->
+</section>
+<!--section class="slide level1" id="Altai_SS_0">
+<img src="figure/Modern_Altai_SS_0.png">
+<img src="figure/Modern_Altai_SS_0_Begin_End.svg">
+</section>
+<section class="slide level1" id="Altai_SS_30">
+<img src="figure/Modern_Altai_SS_30.png">
+<img src="figure/Modern_Altai_SS_30_Begin_End.svg">
+</section-->
+</section>
+<!--section>
+<section class="slide level1" id="DenisovaDS">
+<h3 id="Denisova">Compare Denisova and Modern Human</h3>
+</section>
+<section class="slide level1" id="Denisova_DS_0">
+<img src="figure/Modern_Denisova_0.png">
+<img src="figure/Modern_Denisova_0.svg">
+</section>
+<section class="slide level1" id="Denisova_DS_30">
+<img src="figure/Modern_Denisova_30.png">
+<img src="figure/Modern_Denisova_30.svg">
+</section>
+</section-->
+
+<section>
+<section class="slide level1" id="DDR">
+<h2 id="Denisova">Duplicate reads</h2>
+</section>
+<section class="slide level1" id="DDR_Altai_30" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--h3 id="Altai_Ref">Compare it with Human Ref</h3-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Altai_Altai_dp_30.html">
+Your browser does not support iframe
+</iframe>
+<!--img src="figure/Altai_SS_Altai_Ref_SS_30_Begin_End.svg"-->
+</section>
+<section class="slide level1" id="DDR_Denisova_30" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<!--h3 id="Altai_Ref">Compare it with Human Ref</h3-->
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="figure/Denisova_Denisova_dp_30.html">
+Your browser does not support iframe
+</iframe>
+<!--img src="figure/Altai_SS_Altai_Ref_SS_30_Begin_End.svg"-->
+</section>
+<!--section class="slide level1" id="DDR_Denisova_Altai_distribution_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="Denisova_Altai_0_Dup_distribution.html">
+Your browser does not support iframe
+</iframe>
+</section-->
+</section>
+<!--section>
+<section class="slide level1" id="NewMerger">
+<h2 id="Denisova">Comparison between Mergers</h2>
+</section>
+<section class="slide level1" id="NewMerger_Denisova" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="Denisova_Denisova_New_MX_0.html">
+Your browser does not support iframe
+</iframe>
+</section>
+</section>
+<section>
+<section class="slide level1" id="New_Modern">
+<h2 id="Denisova"> New Modern Human </h2>
+</section>
+<section class="slide level1" id="New_Modern_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="Modern_New_MX_0.html">
+Your browser does not support iframe
+</iframe>
+</section>
+<section class="slide level1" id="New_Modern_Deni_0" style="width: 1600px; height: 800px; display: block; top: -450px; left: -20%">
+<iframe width=100% height="100%" frameborder="no" scrolling="no" src="Modern_New_Denisova_new_0.html">
+Your browser does not support iframe
+</iframe>
+</section>
+</section-->
+<!--section>
+<section class="slide level1" id="Dna_histone">
+<h3 id="gb">Is DNA preserve better around Nucleosome</h3>
+</section>
+<section>
+<img src="figure/EncodeDatatypes2013.png" height="70%" width="70%" >
+<ul class="incremental">
+<li class="fragment">Clustered DNaseI in 125 cell types from ENCODE</li>
+<li class="fragment">Run 2 times</li>
+</ul>
+</section>
+<section>
+<ul class="incremental">
+<li class="fragment">Length of regions fall ouside of HSR 8,202,264 (84%)</li>
+<li class="fragment">Length of regions fall within HSR 1,558,670 (16%)</li>
+<li class="fragment">Bases change outside HSR 179,452,706 (85%)</li>
+<li class="fragment">Bases change inside HSR 30,523,401 (15%) </li>
+</ul>
+</section>
+<section>
+
+</section>
+</section-->
+
+<section class="slide level1" id="Conlcusion">
+<h2 id="future-works">Conclusion & Future work</h2>
+</br>
+<ul class="incremental">
+<li class="fragment">DNA Hydrolysis (C->T) deviated between ancient and Modern</li>
+<li class="fragment">Pattern at some substitutions </li>
+<li class="fragment">Test different Polymerases</li>
+</ul>
+</section>
+<section class="slide level1" id="Acknowledgement">
+<h2 id="Acknowledgement"> Acknowledgement </h2>
+<br><br>
+<ul class="incremental2">
+<li class="fragment2">Marie-Theres Gansauge</li>
+<li class="fragment2">Matthias Meyer</li>
+<li class="fragment2">Kay Prüfer</li>
+<li class="fragment2">Janet Kelso</li>
+<li class="fragment2">Udo Stenzel</li>
+<li class="fragment2">Bioinformatic group</li>
+</ul>
+</section>
+<section class="slide level1" id="thank-you">
+<h2 id="thank-you">Thank You!</h2>
+</section>
+<!-- SLIDE STUFF HERE -->
+ 			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
