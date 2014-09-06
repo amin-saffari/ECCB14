@@ -44,27 +44,33 @@
 <small> Max Planck Institute for Evolutionary Anthropology</small>
 </section>
 <section class="slide level1" id="Compare_the_rate">
+<p>Rate of substitution</p>
 <img src="figure/Altai_Denisova_Ust_Ishim_ModernControl_Ancient.svg">
 </section>
 <section class="slide level1" id="Altai_SS">
-<h3 id="Altai">Compare Denisova, Altai neanderthal, Ancient modern human and Present-day human</h3>
+<h2 id="Altai">Comparing Denisova, Altai neanderthal, Ancient modern human and Present-day human</h2>
 </section>
 <section class="slide level1" id="Altai_New_Modern_0" >
+<p>Substitution pattern along the read base-quiality cutoff 0</p>
 <img src="figure/Altai_Ust_Ishim_Denisova_ModernControl_Ancient_0.svg">
 </section>
 <section class="slide level1" id="Altai_New_Modern_40" >
+<p>Substitution pattern along the read base-quiality cutoff 40</p>
 <img src="figure/Altai_Ust_Ishim_Denisova_ModernControl_Ancient_40.svg">
 </section>
 <section class="slide level1" id="Ust_SS">
-<h3 id="Altai">Ancient Modern-human experiment</h3>
+<h2 id="Altai">Ancient Modern-human experiment</h2>
 </section>
 <section class="slide level1" id="Ust_exp_hist" >
+<p>Rate of substitution</p>
 <img src="figure/ust_experiment_frac.svg">
 </section>
 <section class="slide level1" id="Ust_exp_0" >
+<p>Substitution pattern along the read base-quiality cutoff 0</p>
 <img src="figure/ust_exp_0.svg">
 </section>
 <section class="slide level1" id="Ust_exp_40" >
+<p>Substitution pattern along the read base-quiality cutoff 40</p>
 <img src="figure/ust_exp_40.svg">
 </section>
 <!-- SLIDE STUFF HERE -->
@@ -81,10 +87,8 @@
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				slideNumber: true,
-				embedded: true,
-				touch: true,
 				controls: true,
-				progress: false,
+				progress: true,
 				history: true,
 				center: true,
 
@@ -99,7 +103,6 @@ transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/con
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
